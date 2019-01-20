@@ -46,7 +46,7 @@ public class MybatisPlusConfig {
 	// mybatis plus 3  2.0完全不同 全局配置
 	@Bean(name = "globalConfig")
 	public GlobalConfig globalConfiguration() {
-		log.info("初始化GlobalConfiguration");
+		//log.info("初始化GlobalConfiguration");
 		GlobalConfig configuration = new GlobalConfig();
 		DbConfig dbConfig = new DbConfig();
 		dbConfig.setIdType(IdType.AUTO);
