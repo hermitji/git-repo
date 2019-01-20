@@ -61,7 +61,7 @@ public class MybatisPlusConfig {
 	@Bean(name = "sqlSessionFactory")
 	public SqlSessionFactory createSqlSessionFactoryBean(
 			@Qualifier(value = "globalConfig") GlobalConfig configuration,PaginationInterceptor paginationInterceptor) throws Exception {
-		log.info("初始化SqlSessionFactory");
+		//log.info("初始化SqlSessionFactory");
 		MybatisSqlSessionFactoryBean sqlSessionFactoryBean = new MybatisSqlSessionFactoryBean();
 		sqlSessionFactoryBean.setDataSource(dataSource);
 		sqlSessionFactoryBean.setGlobalConfig(configuration);
